@@ -1,6 +1,8 @@
-FROM centos:8
-RUN yum -y update
-RUN yum install openjdk-11-devel
-RUN yum install -y httpd
-EXPOSE 80
+#Use the official Nginx base image
+FROM nginx:latest
 
+# Copy custom index.html file to replace the default Nginx welcome page
+COPY index.html /usr/share/nginx/html/index.html
+
+# Expose port 80 to allow outside access
+EXPOSE 80
