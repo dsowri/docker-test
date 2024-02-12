@@ -8,5 +8,5 @@ COPY index.html /usr/share/nginx/html/index.html
 RUN mkdir -p /var/cache/nginx/ \
     && chmod -R 777 /var/cache/nginx/
     
-# Expose port 80 to allow outside access
-EXPOSE 8080
+# Expose port 8081 to allow outside access
+EXPOSE 8081
