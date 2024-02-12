@@ -9,4 +9,4 @@ RUN mkdir -p /var/cache/nginx/ \
     && chmod -R 777 /var/cache/nginx/
     
 # Expose port 80 to allow outside access
-EXPOSE 80
+EXPOSE 8080
