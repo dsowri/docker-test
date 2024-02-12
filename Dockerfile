@@ -11,6 +11,9 @@ RUN mkdir -p /var/cache/nginx/client_temp \
     && chmod -R 777 /var/cache/nginx/proxy_temp \
     && mkdir -p /var/cache/nginx/fastcgi_temp \
     && chmod -R 777 /var/cache/nginx/fastcgi_temp
+    && mkdir -p /var/cache/nginx/uwsgi_temp \
+    && chmod -R 777 /var/cache/nginx/uwsgi_temp
+
     
 # Expose port 80 to allow outside access
 EXPOSE 80
