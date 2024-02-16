@@ -2,6 +2,7 @@ apiVersion: apps.openshift.io/v1
 kind: DeploymentConfig
 metadata:
   name: deployment-1
+  namespace: test-project-1
 spec:
   replicas: 1
   selector:
