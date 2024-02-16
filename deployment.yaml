@@ -6,6 +6,8 @@ spec:
   replicas: 1
   selector:
     app: myapp
+  strategy:
+    type: Rolling
   template:
     metadata:
       labels:
