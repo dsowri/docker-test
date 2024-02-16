@@ -13,6 +13,6 @@ spec:
     spec:
       containers:
         - name: myapp-container
-          image: sowri13/webserver:v1
+          image: sowri13/webserver:v2
           ports:
-            - containerPort: 8080
+            - containerPort: 80
