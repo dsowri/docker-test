@@ -5,7 +5,7 @@ metadata:
 spec:
   to:
     kind: Service
-    name: service-
+    name: service-1
   port:
     targetPort: 80
   tls:
