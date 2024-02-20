@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: myapp-container
-          image: sowri13/webserver:v7
+          image: sowri13/webserver:v8
           ports:
             - containerPort: 80
