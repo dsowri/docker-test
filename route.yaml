@@ -7,7 +7,7 @@ spec:
     kind: Service
     name: service-1
   port:
-    targetPort: 8081
+    targetPort: 80
   tls:
     termination: edge
   wildcardPolicy: None
