@@ -1,12 +1,11 @@
 #Use the official Nginx base image
-FROM nginx:alpine
+FROM nginx:latest
 
-RUN  touch /var/run/nginx.pid && \
-     chown -R nginx:nginx /var/cache/nginx /var/run/nginx.pid
-USER nginx
+# Replace default nginx.conf
+COPY nginx.conf /etc/nginx/nginx.conf
 
 # Copy custom index.html file to replace the default Nginx welcome page
-COPY  --chown=nginx:nginx  index.html /usr/share/nginx/html/index.html
+COPY  index.html /usr/share/nginx/html/index.html
 
-# Expose port 80 to allow outside access
-EXPOSE 80
+# Expose port 5000 to allow outside access
+EXPOSE 5000
