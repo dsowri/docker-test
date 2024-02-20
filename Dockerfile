@@ -6,5 +6,3 @@ COPY index.html /usr/share/nginx/html/index.html
     
 # Expose port 80 to allow outside access
 EXPOSE 80
-
-CMD ["sh", "-c", "tail -f /dev/null"]
