@@ -8,4 +8,7 @@ spec:
     name: service-1
   port:
     targetPort: 80
+  tls:
+    termination: edge
+  wildcardPolicy: None
  
